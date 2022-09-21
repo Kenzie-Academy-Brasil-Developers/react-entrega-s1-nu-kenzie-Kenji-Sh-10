@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    padding: 16px;
+    border-radius: 8px;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+.card>div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: start;
+    width: 40%;
+}
+
+.card>div>p {
+    font-weight: 700;
+}
