@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 88px;
+}
+
+button {
+  height: 40px;
+  border-radius: 8px;
+  padding: 16px;
+  color: #343a40;
+  background-color: #e9ecef;
+}
+
+button:hover {
+  color: #e9ecef;
+  background-color: #343a40;
+}
+
+button:focus {
+  background-color: #fd377e;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212529;
+}
+
+.header h1 span {
+  color: #fd377e;
+}
