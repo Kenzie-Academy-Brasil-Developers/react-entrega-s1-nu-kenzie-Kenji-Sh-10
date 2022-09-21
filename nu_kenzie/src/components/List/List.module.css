@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.list h2 {
+  color: #212529;
+}
+
+.list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 480px;
+  gap: 32px;
+  overflow: auto;
+}
+
+.nothing {
+  font-size: 22px;
+  font-weight: 700;
+  color: #343A40;
+}
+
+@media screen and (min-width: 768px) {
+  .list div {
+    flex-direction: row;
+  }
+}
