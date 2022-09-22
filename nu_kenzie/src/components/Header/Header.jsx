@@ -1,17 +1,13 @@
 import styles from "./Header.module.css";
 
-const Header = ({ setIsLoggedIn }) => {
-  const handleLogout = () => {
-    setIsLoggedIn(false);
-  };
-
+const Header = ({ logout }) => {
   return (
-    <div className={styles["header"]}>
+    <header className={styles["header"]}>
       <h1>
         <span>Nu</span> Kenzie
       </h1>
-      <button onClick={handleLogout}>Inicio</button>
-    </div>
+      <button onClick={logout}>Inicio</button>
+    </header>
   );
 };
 

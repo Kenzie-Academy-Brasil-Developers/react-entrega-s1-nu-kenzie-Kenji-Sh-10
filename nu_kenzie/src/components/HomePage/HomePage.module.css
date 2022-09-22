@@ -1,22 +1,36 @@
 .container {
-  width: 100%;
-  background-color: white;
-  padding: 0 1rem;
+  padding: 0 16px;
+  height: 100%;
 }
 
-.content {
+.container > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 32px;
   gap: 16px;
 }
 
+.container > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 940px) {
+  .container > div {
+    padding: 0 64px;
+    gap: 58px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0 10rem;
+  .container > div {
+    flex-direction: row;
   }
 
-  .content {
-    flex-direction: row;
+  .container > div > div {
+    width: 50%;
   }
 }

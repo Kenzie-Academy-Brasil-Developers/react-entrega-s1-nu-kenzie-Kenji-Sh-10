@@ -1,30 +1,32 @@
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  height: 100%;
   padding: 16px;
-  gap: 16px;
+  gap: 48px;
+  color: #ffffff;
+  background-color: #212529;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
   gap: 28px;
-  text-align: start;
 }
 
-.content h1 {
+.content > h1 {
   font-size: 28px;
   font-weight: 700;
 }
 
-.content h1 span {
+.content > h1 > span {
   color: #fd377e;
 }
 
-.content p {
+.content > p {
   font-size: 38px;
   font-weight: 800;
   line-height: 48px;
@@ -36,11 +38,16 @@
   line-height: 26px;
 }
 
-.content button {
+.content > button {
   height: 48px;
-  border-color: #fd377e;
+  border: solid 2px #fd377e;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
   color: #ffffff;
   background-color: #fd377e;
+  transition: 0.3s;
 }
 
 .content button:hover {
@@ -48,22 +55,18 @@
 }
 
 .art {
-  width: 100%;
-  max-width: 600px;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
   .content {
     width: 30%;
+    text-align: start;
   }
 
-  .content button {
-    align-self: flex-start;
-    width: 240px;
+  .art {
+    display: block;
+    width: 80%;
+    max-width: 600px;
   }
 }
