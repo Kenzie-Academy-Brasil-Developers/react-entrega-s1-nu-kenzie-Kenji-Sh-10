@@ -3,31 +3,35 @@
   align-items: center;
   justify-content: space-between;
   height: 88px;
+  padding: 32px;
 }
 
-button {
-  height: 40px;
-  border-radius: 8px;
-  padding: 16px;
-  color: #343a40;
-  background-color: #e9ecef;
-}
-
-button:hover {
-  color: #e9ecef;
-  background-color: #343a40;
-}
-
-button:focus {
-  background-color: #fd377e;
-}
-
-.header h1 {
+.header > h1 {
   font-size: 28px;
   font-weight: 700;
   color: #212529;
 }
 
-.header h1 span {
+.header > h1 > span {
   color: #fd377e;
+}
+
+.header > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    border: solid 2px #E9ECEF;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.header > button:hover {
+  color: #e9ecef;
+  background-color: #343a40;
 }

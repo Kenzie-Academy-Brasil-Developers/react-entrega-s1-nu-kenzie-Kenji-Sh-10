@@ -2,10 +2,6 @@ import styles from "./WelcomePage.module.css";
 import siteArt from "../../assets/siteArt.svg";
 
 const WelcomePage = ({ setIsLoggedIn }) => {
-  const handleLogin = () => {
-    setIsLoggedIn(true);
-  };
-
   return (
     <div className={styles["container"]}>
       <div className={styles["content"]}>
@@ -14,10 +10,10 @@ const WelcomePage = ({ setIsLoggedIn }) => {
         </h1>
         <p>Centralize o controle das suas finanças</p>
         <span>de forma rápida e segura</span>
-        <button onClick={handleLogin}>Iniciar</button>
+        <button onClick={() => setIsLoggedIn(true)}>Iniciar</button>
       </div>
       <div className={styles["art"]}>
-        <img src={siteArt} alt="" />
+        <img src={siteArt} alt="Site Art" />
       </div>
     </div>
   );

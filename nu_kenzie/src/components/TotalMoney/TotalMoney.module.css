@@ -1,29 +1,32 @@
 .total_money {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 96px;
-  margin-top: 16px;
-  padding: 24px;
-  border: solid 1px #e9ecef;
+  padding: 20px 24px;
+  border: solid 2px #e9ecef;
   border-radius: 8px;
-  color: #212529;
-  background-color: #ffffff;
 }
 
-.total_money div {
+.total_money > div {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+}
+
+.total_money > div > p {
+  font-size: 20px;
   font-weight: 700;
   line-height: 30px;
+  color: #212529;
 }
 
-.total_money > div span {
+.total_money > div > span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
   color: #fd377e;
 }
 
-.total_money > span {
-  text-align: start;
+.total_money > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #343a40;
 }
